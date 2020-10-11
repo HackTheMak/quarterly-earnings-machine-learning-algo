@@ -7,7 +7,9 @@ Follow the instructions from the links below, but use "python3" pr "pip3" when t
 # quarterly-earnings-machine-learning-algo
 
 Original Usage guide here: https://www.platorsolutions.com/post/full-guide-build-a-commission-free-algo-trading-bot-by-machine-learning-quarterly-earnings-reports
+
 or
+
 Updated Usage guide here: https://towardsdatascience.com/build-a-commission-free-algo-trading-bot-by-machine-learning-quarterly-earnings-reports-full-b414e5d759e8
 
 
