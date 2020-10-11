@@ -36,7 +36,32 @@ Updated Usage guide here: https://towardsdatascience.com/build-a-commission-free
 
 Ticker.txt downloaded from https://www.sec.gov/include/ticker.txt
 
-# NOTE: Hardware Reqs
+# Comparisions (GoogleML Natural Language Sentiment)
+Results of 2 Years of Data
+
+Overall Precision/Recall: 26.71%
+
+Sentiment Score 0 Precision: 31.5%
+
+Sentiment Score 0  Recall: 51.03%
+
+Results of 10 Years of Data (from article)
+
+Overall Precision/Recall: 29.38%
+
+Sentiment Score 0 Precision: 35.63%
+
+Sentiment Score 0  Recall: 60.78%
+
+Results of 20 Years of Data (ongoing)
+
+Overall Precision/Recall: 
+
+Sentiment Score 0 Precision: 
+
+Sentiment Score 0  Recall: 
+
+# NOTE: Hardware Stats
 The process does take a long time, days for the Ma/K's case.
 2 years of records took about 3 days with the use of 12 CPU cores and 16GB RAM.
 20 years is still ongoing with about one week to pull the records from the SEC.
