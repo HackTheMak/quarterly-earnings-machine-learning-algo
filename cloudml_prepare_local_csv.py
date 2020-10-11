@@ -29,6 +29,11 @@ df = df.join(financials)
 
 df['prc_change_t2'] = pd.qcut(df.prc_change_t2, q=5, labels=range(5))
 
+# prc_change_t2 are numical Floats that look like INTigers, below converts them into Int's
+df['prc_change_t2'] = df['prc_change_t2'].astype(int)
+# Delete rows that were NaNs/Blanks originally - After the above fix, they will show as -9xxxx...'s. Therefore remove them with the command below
+df = df[df.prc_change_t2 >= 0]
+
 print(df)
 
 df.to_csv('training_data.csv', header=False, index=False)
