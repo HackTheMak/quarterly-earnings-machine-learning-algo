@@ -23,8 +23,14 @@ Python3 is been installed into the base O/Ss and therefore just need the followi
 - sudo pip3 install nltk
 - python3 -c 'import nltk; nltk.download("punkt")'
 - pip3 install python-Levenshtein
+- python3 -m pip install "dask[complete]"
+- pip3 install google-api-core
+- pip3 install google-api-python-client
+- pip3 install google-cloud-automl
+- pip3 install google-cloud-storage
+- pip3 install alpaca_trade_api
 
-Follow the instructions from the links below, but use "python3" pr "pip3" when the command line instructions have "python" or "pip".
+Follow the instructions from the links below, but use "python3" or "pip3" when the command line instructions have "python" or "pip".
 
 # quarterly-earnings-machine-learning-algo
 
