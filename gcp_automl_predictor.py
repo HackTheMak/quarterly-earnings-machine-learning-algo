@@ -4,8 +4,9 @@ import pandas as pd
 import dask.dataframe as dd
 
 from google.api_core.client_options import ClientOptions
-from google.cloud import automl_v1beta1
-from google.cloud.automl_v1beta1.proto import service_pb2
+from google.cloud import automl_v1
+# The below line is not needede
+# from google.cloud.automl_v1.proto import service_pb2
 from google.cloud import storage
 
 class AutoMLPredictor:
@@ -22,7 +23,7 @@ class AutoMLPredictor:
       model_name = self.model_name
 
     options = ClientOptions(api_endpoint='automl.googleapis.com')
-    prediction_client = automl_v1beta1.PredictionServiceClient(client_options=options)
+    prediction_client = automl_v1.PredictionServiceClient(client_options=options)
 
     payload = self.__inline_text_payload(text)
 
