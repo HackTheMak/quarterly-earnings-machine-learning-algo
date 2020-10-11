@@ -37,15 +37,21 @@ def getFinancialOneDay(row):
 
     next_day_open_price = hist.loc[(date + pd.Timedelta(days=1))]['Open']
     next_day_close_price = hist.loc[(date + pd.Timedelta(days=1))]['Close']
-    prc_change = (next_day_close_price - next_day_open_price) / next_day_open_price
+# Originally designed for getting the opening and close prices of one and two days after the report
+# Decided to remove the second day, and just get the same day information.
+# Reasoning is due to the how quickly prices adjust during the day and to minimize the number of 
+# reports that get "NaN" (blank information) due to weekends.
+#    prc_change = (next_day_close_price - next_day_open_price) / next_day_open_price
+    prc_change = (next_day_close_price - next_day_open_price) / next_day_close_price
     row['prc_change'] = prc_change
+    row['prc_change_t2'] = prc_change
     logging.info(prc_change)
 
-    if (date + pd.Timedelta(days=2)) in hist.index:
-        next_day_open_price = hist.loc[(date + pd.Timedelta(days=1))]['Open']
-        t2_open_price = hist.loc[(date + pd.Timedelta(days=2))]['Open']
-        prc_change = (t2_open_price - next_day_open_price) / next_day_open_price
-        row['prc_change_t2'] = prc_change
+#    if (date + pd.Timedelta(days=2)) in hist.index:
+#        next_day_open_price = hist.loc[(date + pd.Timedelta(days=1))]['Open']
+#        t2_open_price = hist.loc[(date + pd.Timedelta(days=2))]['Open']
+#        prc_change = (t2_open_price - next_day_open_price) / next_day_open_price
+#        row['prc_change_t2'] = prc_change
 
     return row
 
