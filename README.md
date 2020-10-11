@@ -38,28 +38,19 @@ Ticker.txt downloaded from https://www.sec.gov/include/ticker.txt
 
 # Comparisions (GoogleML Natural Language Sentiment)
 Results of 2 Years of Data
-
-Overall Precision/Recall: 26.71%
-
-Sentiment Score 0 Precision: 31.5%
-
-Sentiment Score 0  Recall: 51.03%
+- Overall Precision/Recall: 26.71%
+- Sentiment Score 0 Precision: 31.5%
+- Sentiment Score 0  Recall: 51.03%
 
 Results of 10 Years of Data (from article)
-
-Overall Precision/Recall: 29.38%
-
-Sentiment Score 0 Precision: 35.63%
-
-Sentiment Score 0  Recall: 60.78%
+- Overall Precision/Recall: 29.38%
+- Sentiment Score 0 Precision: 35.63%
+- Sentiment Score 0  Recall: 60.78%
 
 Results of 20 Years of Data (ongoing)
-
-Overall Precision/Recall: 
-
-Sentiment Score 0 Precision: 
-
-Sentiment Score 0  Recall: 
+- Overall Precision/Recall: 
+- Sentiment Score 0 Precision: 
+- Sentiment Score 0  Recall: 
 
 # NOTE: Hardware Stats
 The process does take a long time, days for the Ma/K's case.
