@@ -11,6 +11,7 @@ Also, be sure to create the following sub-folders, as the code does not create t
 And when the code has been place, need to make the following edits to the gcp_automl_predictor.py file (replace the Insert Here words)
 - project_id: (Line 11) Insert your Project ID from the Google Predict.py into the Quotes. Just the unquie characters.
 - model_id: (Line 12) Insert your Model ID from the Google Predict.py into the Quotes. Just the unquie characters.
+
 Example From Google of Execute the Request field: projects/121212121212/locations/us-central1/models/LNG121212121212121212121212
 - project_id = "121212121212"
 - model_id = "LNG121212121212121212121212"
