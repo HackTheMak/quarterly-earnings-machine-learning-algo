@@ -8,6 +8,11 @@ Also, be sure to create the following sub-folders, as the code does not create t
 - cleaned_filings
 - whole_file_diffs
 
+And when the code has been place, need to make the following edits to the gcp_automl_predictor.py file (replace the Insert Here words)
+- project_id Insert your Project ID from the Google Predict.py into the Quotes. Just the unquie characters.
+- model_id Insert your Model ID from the Google Predict.py into the Quotes. Just the unquie characters.
+
+
 # For Python3 Environment
 This was tested using Linux Mint v19, which would work with Linux Ubuntu v20.
 
