@@ -9,9 +9,11 @@ Also, be sure to create the following sub-folders, as the code does not create t
 - whole_file_diffs
 
 And when the code has been place, need to make the following edits to the gcp_automl_predictor.py file (replace the Insert Here words)
-- project_id Insert your Project ID from the Google Predict.py into the Quotes. Just the unquie characters.
-- model_id Insert your Model ID from the Google Predict.py into the Quotes. Just the unquie characters.
-
+- project_id: (Line 11) Insert your Project ID from the Google Predict.py into the Quotes. Just the unquie characters.
+- model_id: (Line 12) Insert your Model ID from the Google Predict.py into the Quotes. Just the unquie characters.
+Example From Google of Execute the Request field: projects/121212121212/locations/us-central1/models/LNG121212121212121212121212
+- project_id = "121212121212"
+- model_id = "LNG121212121212121212121212"
 
 # For Python3 Environment
 This was tested using Linux Mint v19, which would work with Linux Ubuntu v20.
@@ -36,6 +38,29 @@ Python3 is been installed into the base O/Ss and therefore just need the followi
 - pip3 install alpaca_trade_api
 
 Follow the instructions from the links below, but use "python3" or "pip3" when the command line instructions have "python" or "pip".
+
+# Create a Service Account for Google ML
+With the instructions below and of the current code in this fork, a Service Account will need to be created.
+When at the Google Cloud Platform part of the article(s) below, to create the Service Account:
+- Click on the three horizontal lines left of the Google Cloud Platform menu bar.
+- Click on IAM & Admin > Then Click on Service Accounts
+- Provide a Name for the account
+- Leave the Service Account ID as is, it should be already set to the project
+- Provide a description if you like
+- Click on Create
+- Select Role: AutoML - Predictor
+-- 1st Role: Select AutoML and then Predictor
+- Click on Continue
+- Click on Update
+- Download the JSON key file
+- Once downloaded, move the json file to a preferred place or within this script's folder.
+- Edit the file, "gcp_automl_predictor.py"
+- Insert the path and filename of the json file into the quotes of line 14
+-- Example: os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/home/MyUserName/Python/Algo/MySecFile.json"
+
+# To Run the MakeTrades.py Script
+- python3 MakeTrades.py --keys InsertYourAlpacaIDHere --secret InsertYourAlpacaSecretKeyHere --model InsertYourFullGoogleModelNameHere
+- Example: python3 MakeTrades.py --keys FGDFGSDFGHSDFGSD --secret AGFDGasdaf3243wfsaDSFSAADFA345sSDRSEss --model projects/121212121212/locations/us-central1/models/LNG121212121212121212121212
 
 # quarterly-earnings-machine-learning-algo
 
