@@ -4,10 +4,15 @@ import pandas as pd
 import dask.dataframe as dd
 
 from google.api_core.client_options import ClientOptions
-from google.cloud import automl_v1
-# The below line is not needede
-# from google.cloud.automl_v1.proto import service_pb2
+from google.cloud import automl
 from google.cloud import storage
+
+# To overcome the Python "self" oddity for passing values in Predict()
+project_id = "InsertYourProjectID"
+model_id = "InsertYourModelID"
+# For Credentials to access Google
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/InsertPathHere/InsertFilenameHere.json"
+
 
 class AutoMLPredictor:
 
@@ -24,11 +29,20 @@ class AutoMLPredictor:
 
     options = ClientOptions(api_endpoint='automl.googleapis.com')
     prediction_client = automl_v1.PredictionServiceClient(client_options=options)
+    model_full_id = automl.AutoMlClient.model_path(project_id, "us-central1", model_id)
 
     payload = self.__inline_text_payload(text)
 
     params = {}
-    request = prediction_client.predict(model_name, payload, params)
+    request = automl.PredictRequest(
+      name = model_full_id,
+      payload = payload,
+      params = params
+    )
+    response = prediction_client.predict(request=request)
+    prtt = "Response"
+    print(prtt)
+    print(request.payload[0].text_sentiment.sentiment)
     return request.payload[0].text_sentiment.sentiment  # waits until request is returned
 
 
