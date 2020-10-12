@@ -50,7 +50,6 @@ When at the Google Cloud Platform part of the article(s) below, to create the Se
 - Provide a description if you like
 - Click on Create
 - Select Role: AutoML - Predictor
-- 1st Role: Select AutoML and then Predictor
 - Click on Continue
 - Click on Update
 - Download the JSON key file
