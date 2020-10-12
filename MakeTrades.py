@@ -107,6 +107,8 @@ def main():
     predictor = AutoMLPredictor(model_name)
 
     todays_filings_list = getTodayFilingCikList()
+    prt = "Todays Filing Listings"
+    print(prt)
     print(todays_filings_list)
 
     for cik in todays_filings_list:
@@ -150,12 +152,12 @@ def main():
             predicted_value = predictor.get_prediction(diff)
             ticker = fc.getTickerFromCik(cik)
 
-            # print('cik: ', cik)
-            # print('ticker: ', ticker)
-            # print('current_date.hour: ', current_date.hour)
-            # print('days_since_last_filing: ', days_since_last_filing)
-            # print(diff[:100])
-            # print('predicted_value: ', predicted_value)
+            print('cik: ', cik)
+            print('ticker: ', ticker)
+            print('current_date.hour: ', current_date.hour)
+            print('days_since_last_filing: ', days_since_last_filing)
+            print(diff[:100])
+            print('predicted_value: ', predicted_value)
 
             if predicted_value == 0:
 
