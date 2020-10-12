@@ -7,7 +7,7 @@ import pandas as pd
 import re
 import alpaca_trade_api as tradeapi
 import yfinance as yf
-import sys
+# import sys
 import argparse
 
 base_url = 'https://www.sec.gov'
