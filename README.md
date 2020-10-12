@@ -50,14 +50,14 @@ When at the Google Cloud Platform part of the article(s) below, to create the Se
 - Provide a description if you like
 - Click on Create
 - Select Role: AutoML - Predictor
--- 1st Role: Select AutoML and then Predictor
+- 1st Role: Select AutoML and then Predictor
 - Click on Continue
 - Click on Update
 - Download the JSON key file
 - Once downloaded, move the json file to a preferred place or within this script's folder.
 - Edit the file, "gcp_automl_predictor.py"
 - Insert the path and filename of the json file into the quotes of line 14
--- Example: os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/home/MyUserName/Python/Algo/MySecFile.json"
+- Example: os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/home/MyUserName/Python/Algo/MySecFile.json"
 
 # To Run the MakeTrades.py Script
 - python3 MakeTrades.py --keys InsertYourAlpacaIDHere --secret InsertYourAlpacaSecretKeyHere --model InsertYourFullGoogleModelNameHere
