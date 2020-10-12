@@ -59,11 +59,11 @@ When at the Google Cloud Platform part of the article(s) below, to create the Se
 - Example: os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/home/MyUserName/Python/Algo/MySecFile.json"
 
 # To Run the MakeTrades.py Script
+Run the script with the following command:
 - python3 MakeTrades.py --keys InsertYourAlpacaIDHere --secret InsertYourAlpacaSecretKeyHere --model InsertYourFullGoogleModelNameHere
 - Example: python3 MakeTrades.py --keys FGDFGSDFGHSDFGSD --secret AGFDGasdaf3243wfsaDSFSAADFA345sSDRSEss --model projects/121212121212/locations/us-central1/models/LNG121212121212121212121212
 
-# quarterly-earnings-machine-learning-algo
-
+# Original Articles with Instructions for the quarterly-earnings-machine-learning-algo
 Original Usage guide here: https://www.platorsolutions.com/post/full-guide-build-a-commission-free-algo-trading-bot-by-machine-learning-quarterly-earnings-reports
 
 or
