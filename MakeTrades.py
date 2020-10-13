@@ -170,8 +170,14 @@ def main():
                 quantity_to_buy = int(1000 / price)
                 print(ticker, quantity_to_buy)
                 if api.get_asset(ticker).tradable:
-                    submitShort(api, ticker, quantity_to_buy)
-            print('length: ', len(diff))
+                    if api.get_asset(ticker).shortable:
+                        submitShort(api, ticker, quantity_to_buy)
+                    else:
+                        print(ticker, 'is NOT Shortable')
+                else:
+                    print(ticker, 'is NOT Tradatable')
+                        
+            print('Text Difference Length: ', len(diff))
         except Exception as e:
             print(e)
             continue
