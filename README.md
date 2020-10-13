@@ -48,6 +48,7 @@ Go to the yfinance base.py file (/usr/lib/python3.8/dist-packages/yfinance/base.
 Edit line 286:
 - Old Line: self._institutional_holders = holders[1]
 - New Line:  self._institutional_holders = holders[1] if len(holders) > 1 else[]
+
 Or use this set of codes:
 - https://github.com/ranaroussi/yfinance/issues/208#issuecomment-608284124
 
