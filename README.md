@@ -40,6 +40,18 @@ Python3 is been installed into the base O/Ss and therefore just need the followi
 
 Follow the instructions from the links below, but use "python3" or "pip3" when the command line instructions have "python" or "pip".
 
+# Bug with YFinance (and the Fix)
+There is a bug with YFinance in that some of the stocks will not be reported, due to not having all of the available information (or missing some of it). To rectify this, use either of these codes.
+
+Go to the yfinance base.py file (/usr/lib/python3.8/dist-packages/yfinance/base.py
+
+Edit line 286:
+- Old Line: self._institutional_holders = holders[1]
+- New Line:  self._institutional_holders = holders[1] if len(holders) > 1 else[]
+Or use this set of codes:
+- https://github.com/ranaroussi/yfinance/issues/208#issuecomment-608284124
+
+
 # Create a Service Account for Google ML
 With the instructions below and of the current code in this fork, a Service Account will need to be created.
 When at the Google Cloud Platform part of the article(s) below, to create the Service Account:
