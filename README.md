@@ -107,3 +107,12 @@ The process does take a long time, days for the Ma/K's case.
 2 years of records took about 3 days with the use of 12 CPU cores and 16GB RAM.
 20 years is still ongoing with about one week to pull the records from the SEC.
 So, this takes patience to gather and compile those reports.
+
+# Results
+So far, with just the 2 years of records for the Googgle AutoML, it was able to give Short Indicators for LOOP, TSRI and NNPP (but has changed tickers). However, both LOOP and TSRI are not 'shortable' with Alpaca, most likely due to the negative news which dove LOOP prices down (about one week after the Q-10 report) and TSRI is pretty much a penny stock. Though do note, that the program worked correctly for LOOP. The report was on Oct 7th 2020 and had a price drop the next few days.
+
+However, the question becomes, how often does the AutoML fail to provide a Result of "0" for reports, which should be rated as such? 
+
+Although, even with the best of Q-10 reports with record high profits, can lead to a stock price drop.
+
+¯\_(ツ)_/¯
