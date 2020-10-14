@@ -115,4 +115,4 @@ However, the question becomes, how often does the AutoML fail to provide a Resul
 
 Although, even with the best of Q-10 reports with record high profits, can lead to a stock price drop.
 
-¯\\_(ツ)_/¯
+¯\\\_(ツ)\_/¯
