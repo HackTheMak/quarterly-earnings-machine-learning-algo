@@ -43,7 +43,7 @@ Follow the instructions from the links below, but use "python3" or "pip3" when t
 # Bug with YFinance (and the Fix)
 There is a bug with YFinance in that some of the stocks will not be reported, due to not having all of the available information (or missing some of it). To rectify this, use either of these codes.
 
-Go to the yfinance base.py file (/usr/lib/python3.8/dist-packages/yfinance/base.py
+Go to the yfinance base.py file (/usr/lib/python3.8/dist-packages/yfinance/base.py)
 
 Edit line 286:
 - Old Line: self._institutional_holders = holders[1]
@@ -109,7 +109,7 @@ The process does take a long time, days for the Ma/K's case.
 So, this takes patience to gather and compile those reports.
 
 # Results
-So far, with just the 2 years of records for the Googgle AutoML, it was able to give Short Indicators for LOOP, TSRI and NNPP (but has changed tickers). However, both LOOP and TSRI are not 'shortable' with Alpaca, most likely due to the negative news which dove LOOP prices down (about one week after the Q-10 report) and TSRI is pretty much a penny stock. Though do note, that the program worked correctly for LOOP. The report was on Oct 7th 2020 and had a price drop the next few days.
+So far, with just the 2 years of records for the Googgle AutoML and 5 days of testing, it was able to give Short Indicators for LOOP, TSRI and NNPP (but has changed tickers). However, both LOOP and TSRI are not 'shortable' with Alpaca, most likely due to the negative news which dove LOOP prices down (about one week after the Q-10 report) and TSRI is pretty much a penny stock. Though do note, that the program worked correctly for LOOP. The report was on Oct 7th 2020 and had a price drop the next few days (before the big bombshell news story on the 13/14th of October.).
 
 However, the question becomes, how often does the AutoML fail to provide a Result of "0" for reports, which should be rated as such? 
 
