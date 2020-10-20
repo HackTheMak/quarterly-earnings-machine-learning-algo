@@ -97,16 +97,15 @@ Results of 10 Years of Data (from article)
 - Sentiment Score 0 Precision: 35.63%
 - Sentiment Score 0  Recall: 60.78%
 
-Results of 20 Years of Data (ongoing)
-- Overall Precision/Recall: 
-- Sentiment Score 0 Precision: 
-- Sentiment Score 0  Recall: 
+Results of 20 Years of Data
+- Overall Precision/Recall: 31.2%
+- Sentiment Score 0 Precision: 33.96%
+- Sentiment Score 0  Recall: 28.82%
 
 # NOTE: Hardware Stats
 The process does take a long time, days for the Ma/K's case.
 2 years of records took about 3 days with the use of 12 CPU cores and 16GB RAM.
-20 years is still ongoing with about one week to pull the records from the SEC.
-So, this takes patience to gather and compile those reports.
+20 years took about two weeks. Judging from the results, just go with 2 to 10 years worth of data.
 
 # Results
 So far, with just the 2 years of records for the Googgle AutoML and 5 days of testing, it was able to give Short Indicators for LOOP, TSRI and NNPP (but has changed tickers). However, both LOOP and TSRI are not 'shortable' with Alpaca, most likely due to the negative news which dove LOOP prices down (about one week after the Q-10 report) and TSRI is pretty much a penny stock. Though do note, that the program worked correctly for LOOP. The report was on Oct 7th 2020 and had a price drop the next few days (before the big bombshell news story on the 13/14th of October.).
